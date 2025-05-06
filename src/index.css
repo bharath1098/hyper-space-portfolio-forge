@@ -64,4 +64,16 @@
   .panel {
     @apply glass rounded-lg p-4 shadow-lg;
   }
+
+  .bg-space-dark {
+    @apply bg-[#070b1a];
+  }
+
+  .neon-blue {
+    color: #4CC9F0;
+  }
+
+  .neon-purple {
+    color: #8B5CF6;
+  }
 }

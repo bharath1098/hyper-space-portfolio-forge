@@ -1,5 +1,4 @@
 
-
 import { Text } from '@react-three/drei';
 
 interface CubeFaceProps {
@@ -68,4 +67,3 @@ const CubeFace = ({
 };
 
 export default CubeFace;
-

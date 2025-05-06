@@ -79,7 +79,7 @@ const WelcomeConsole = ({ position, isActive, onLoaded }: WelcomeConsoleProps) =
           color="white"
           anchorX="center"
           anchorY="middle"
-          font="/fonts/JetBrainsMono-Bold.woff"
+          font="https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOV.woff"
           maxWidth={3}
         >
           BHARATH KUMAR K
@@ -91,7 +91,7 @@ const WelcomeConsole = ({ position, isActive, onLoaded }: WelcomeConsoleProps) =
           color="#e2e8f0"
           anchorX="center"
           anchorY="middle"
-          font="/fonts/Inter-Regular.woff"
+          font="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff"
           maxWidth={3}
         >
           Full-Stack Developer
@@ -104,7 +104,7 @@ const WelcomeConsole = ({ position, isActive, onLoaded }: WelcomeConsoleProps) =
           color="#4CC9F0"
           anchorX="center"
           anchorY="middle"
-          font="/fonts/JetBrainsMono-Bold.woff"
+          font="https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOV.woff"
           onClick={() => window.open('https://github.com/bharathkumar', '_blank')}
           onPointerOver={() => document.body.style.cursor = 'pointer'}
           onPointerOut={() => document.body.style.cursor = 'auto'}
@@ -118,7 +118,7 @@ const WelcomeConsole = ({ position, isActive, onLoaded }: WelcomeConsoleProps) =
           color="#F72585"
           anchorX="center"
           anchorY="middle"
-          font="/fonts/JetBrainsMono-Bold.woff"
+          font="https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOV.woff"
           onClick={() => window.open('mailto:bharathkumar@example.com', '_blank')}
           onPointerOver={() => document.body.style.cursor = 'pointer'}
           onPointerOut={() => document.body.style.cursor = 'auto'}
@@ -132,7 +132,7 @@ const WelcomeConsole = ({ position, isActive, onLoaded }: WelcomeConsoleProps) =
           color="#4ADE80"
           anchorX="center"
           anchorY="middle"
-          font="/fonts/JetBrainsMono-Bold.woff"
+          font="https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOV.woff"
           onClick={() => window.open('/resume.pdf', '_blank')}
           onPointerOver={() => document.body.style.cursor = 'pointer'}
           onPointerOut={() => document.body.style.cursor = 'auto'}
@@ -146,7 +146,7 @@ const WelcomeConsole = ({ position, isActive, onLoaded }: WelcomeConsoleProps) =
           color="#FCD34D"
           anchorX="center"
           anchorY="middle"
-          font="/fonts/JetBrainsMono-Bold.woff"
+          font="https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOV.woff"
           onClick={() => window.open('https://bharathkumar.dev', '_blank')}
           onPointerOver={() => document.body.style.cursor = 'pointer'}
           onPointerOut={() => document.body.style.cursor = 'auto'}

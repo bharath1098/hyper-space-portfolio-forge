@@ -55,7 +55,8 @@ const AchievementsPodium = ({ position, isActive }: AchievementsPodiumProps) => 
         color="#FCD34D"
         anchorX="center"
         anchorY="middle"
-        font="https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOV.woff"
+        fontWeight="bold"
+        fontFamily="JetBrains Mono"
       >
         ACHIEVEMENTS
       </Text>
@@ -112,7 +113,8 @@ const AchievementsPodium = ({ position, isActive }: AchievementsPodiumProps) => 
                 color="#FCD34D"
                 anchorX="center"
                 anchorY="middle"
-                font="https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOV.woff"
+                fontWeight="bold"
+                fontFamily="JetBrains Mono"
                 maxWidth={1.8}
               >
                 {achievement.title}
@@ -125,7 +127,7 @@ const AchievementsPodium = ({ position, isActive }: AchievementsPodiumProps) => 
                 color="#F8FAFC"
                 anchorX="center"
                 anchorY="middle"
-                font="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff"
+                fontFamily="Inter"
                 maxWidth={1.8}
               >
                 {achievement.description}
@@ -138,7 +140,8 @@ const AchievementsPodium = ({ position, isActive }: AchievementsPodiumProps) => 
                 color="#4CC9F0"
                 anchorX="center"
                 anchorY="middle"
-                font="https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOV.woff"
+                fontWeight="bold"
+                fontFamily="JetBrains Mono"
               >
                 {achievement.year}
               </Text>

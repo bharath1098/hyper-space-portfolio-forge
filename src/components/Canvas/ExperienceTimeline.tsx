@@ -59,7 +59,8 @@ const ExperienceTimeline = ({ position, isActive }: ExperienceTimelineProps) => 
         color="#4CC9F0"
         anchorX="center"
         anchorY="middle"
-        font="https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOV.woff"
+        fontWeight="bold"
+        fontFamily="JetBrains Mono"
       >
         EXPERIENCE
       </Text>
@@ -110,7 +111,8 @@ const ExperienceTimeline = ({ position, isActive }: ExperienceTimelineProps) => 
                 color="#8B5CF6"
                 anchorX="center"
                 anchorY="middle"
-                font="https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOV.woff"
+                fontWeight="bold"
+                fontFamily="JetBrains Mono"
               >
                 {exp.company}
               </Text>
@@ -122,7 +124,7 @@ const ExperienceTimeline = ({ position, isActive }: ExperienceTimelineProps) => 
                 color="#F8FAFC"
                 anchorX="center"
                 anchorY="middle"
-                font="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff"
+                fontFamily="Inter"
               >
                 {exp.role}
               </Text>
@@ -134,7 +136,7 @@ const ExperienceTimeline = ({ position, isActive }: ExperienceTimelineProps) => 
                 color="#94A3B8"
                 anchorX="center"
                 anchorY="middle"
-                font="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff"
+                fontFamily="Inter"
               >
                 {exp.period}
               </Text>
@@ -148,7 +150,7 @@ const ExperienceTimeline = ({ position, isActive }: ExperienceTimelineProps) => 
                   color={hoveredCard === index ? "#F8FAFC" : "#94A3B8"}
                   anchorX="center"
                   anchorY="middle"
-                  font="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff"
+                  fontFamily="Inter"
                   maxWidth={2.8}
                 >
                   • {highlight}

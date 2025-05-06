@@ -45,7 +45,9 @@ const CubeFace = ({
         color="white"
         anchorX="center"
         anchorY="middle"
-        font="https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOV.woff"
+        font="/fonts/JetBrainsMono-Bold.woff"
+        fontWeight="bold"
+        fontFamily="JetBrains Mono"
       >
         {title}
       </Text>
@@ -57,7 +59,8 @@ const CubeFace = ({
           color="white"
           anchorX="center"
           anchorY="middle"
-          font="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff"
+          font="/fonts/Inter-Regular.woff"
+          fontFamily="Inter"
         >
           {item}
         </Text>

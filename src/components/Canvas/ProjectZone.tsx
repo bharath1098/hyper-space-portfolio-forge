@@ -1,8 +1,7 @@
-
 import { useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { Text, Float } from '@react-three/drei';
-import { Group } from 'three';
+import { Group, Vector3 } from 'three';
 
 interface ProjectZoneProps {
   position: [number, number, number];
@@ -44,10 +43,8 @@ const ProjectZone = ({ position, isActive }: ProjectZoneProps) => {
   useFrame((state, delta) => {
     if (groupRef.current) {
       // Scale animation when active
-      groupRef.current.scale.lerp(
-        isActive ? [1, 1, 1] : [0.3, 0.3, 0.3],
-        0.05
-      );
+      const targetScale: [number, number, number] = isActive ? [1, 1, 1] : [0.3, 0.3, 0.3];
+      groupRef.current.scale.lerp(new Vector3(...targetScale), 0.05);
       
       // Subtle rotation when not active
       if (!isActive) {

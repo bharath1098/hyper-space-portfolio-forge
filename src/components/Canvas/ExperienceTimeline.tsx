@@ -1,8 +1,7 @@
-
 import { useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { Text, Float } from '@react-three/drei';
-import { Group, Mesh } from 'three';
+import { Group, Mesh, Vector3 } from 'three';
 
 interface ExperienceTimelineProps {
   position: [number, number, number];
@@ -38,10 +37,8 @@ const ExperienceTimeline = ({ position, isActive }: ExperienceTimelineProps) => 
   useFrame((state, delta) => {
     if (groupRef.current) {
       // Scale animation when active
-      groupRef.current.scale.lerp(
-        isActive ? [1, 1, 1] : [0.3, 0.3, 0.3],
-        0.05
-      );
+      const targetScale: [number, number, number] = isActive ? [1, 1, 1] : [0.3, 0.3, 0.3];
+      groupRef.current.scale.lerp(new Vector3(...targetScale), 0.05);
       
       // Subtle rotation when not active
       if (!isActive) {

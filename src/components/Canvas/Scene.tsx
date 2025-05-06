@@ -2,6 +2,7 @@
 import { Canvas } from '@react-three/fiber';
 import { Suspense, useState } from 'react';
 import { OrbitControls, PerspectiveCamera, Environment } from '@react-three/drei';
+import { Vector3 } from 'three';
 import LoadingScreen from '../UI/LoadingScreen';
 import WelcomeConsole from './WelcomeConsole';
 import SkillsCube from './SkillsCube';
@@ -15,8 +16,8 @@ const Scene = () => {
   const [currentSection, setCurrentSection] = useState('welcome');
   const [isLoading, setIsLoading] = useState(true);
 
-  // Camera positions for each section
-  const cameraPositions = {
+  // Camera positions for each section as tuples with fixed length
+  const cameraPositions: Record<string, [number, number, number]> = {
     welcome: [0, 0, 10],
     skills: [10, 2, 5],
     experience: [-5, 0, 8],

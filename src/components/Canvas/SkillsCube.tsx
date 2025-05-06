@@ -2,7 +2,7 @@
 import { useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { Text } from '@react-three/drei';
-import { Group, Mesh, MeshStandardMaterial } from 'three';
+import { Group, Mesh, MeshStandardMaterial, Vector3 } from 'three';
 
 interface SkillsCubeProps {
   position: [number, number, number];
@@ -46,7 +46,8 @@ const SkillsCube = ({ position, isActive }: SkillsCubeProps) => {
       }
       
       // Scale up when active
-      cubeRef.current.scale.lerp(isActive ? [1.2, 1.2, 1.2] : [0.5, 0.5, 0.5], 0.05);
+      const targetScale: [number, number, number] = isActive ? [1.2, 1.2, 1.2] : [0.5, 0.5, 0.5];
+      cubeRef.current.scale.lerp(new Vector3(...targetScale), 0.05);
     }
   });
   

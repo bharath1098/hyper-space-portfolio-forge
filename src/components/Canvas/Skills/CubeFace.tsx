@@ -1,4 +1,5 @@
 
+
 import { Text } from '@react-three/drei';
 
 interface CubeFaceProps {
@@ -45,7 +46,7 @@ const CubeFace = ({
         color="white"
         anchorX="center"
         anchorY="middle"
-        font="/fonts/JetBrainsMono-Bold.woff"
+        font="https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOV.woff"
       >
         {title}
       </Text>
@@ -57,7 +58,7 @@ const CubeFace = ({
           color="white"
           anchorX="center"
           anchorY="middle"
-          font="/fonts/Inter-Regular.woff"
+          font="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff"
         >
           {item}
         </Text>
@@ -67,3 +68,4 @@ const CubeFace = ({
 };
 
 export default CubeFace;
+
